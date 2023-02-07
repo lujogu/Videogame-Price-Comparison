@@ -1,11 +1,27 @@
+import time
 import requests
 from bs4 import BeautifulSoup
+import selenium
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.support.ui import Select
 
-URL = "https://www.fanatical.com/en/game/elden-ring"
-page = requests.get(URL)
+options = Options()
+options.add_argument("--headless")
+driver = webdriver.Firefox(firefox_options=options)
 
-soup = BeautifulSoup(page.content, "html.parser")
+url = 'https://www.fanatical.com/en/game/elden-ring'
+driver.get(url)
 
-print(soup.prettify())
+select = Select(driver.find_element(By.XPATH, "//select[@name='day']"))
 
-# could use selenium to navigate the webpage
+#wait.1.secong.in.case.of.transitions
+time.sleep(1)
+
+pagesource = driver.page_source
+soup = BeautifulSoup(pagesource)
+
+#you.can.now.enjoy.soup
+print soup.prettify()
