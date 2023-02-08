@@ -5,12 +5,13 @@ import selenium
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import Select
 
 options = Options()
 options.add_argument("--headless")
-driver = webdriver.Firefox(firefox_options=options)
+driver = webdriver.Firefox(options=options)
 
 url = 'https://www.fanatical.com/en/game/elden-ring'
 driver.get(url)
@@ -24,4 +25,6 @@ pagesource = driver.page_source
 soup = BeautifulSoup(pagesource)
 
 #you.can.now.enjoy.soup
-print soup.prettify()
+print(soup.prettify())
+
+driver.quit()

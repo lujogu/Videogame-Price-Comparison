@@ -1,0 +1,48 @@
+1675899061380	geckodriver	INFO	Listening on 127.0.0.1:63442
+1675899064436	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "634 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileSO6Y8K"
+*** You are running in headless mode.
+1675899064761	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675899064766	Marionette	INFO	Listening on port 63455
+WebDriver BiDi listening on ws://127.0.0.1:63443
+Read port: 63455
+1675899065034	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileSO6Y8K\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63443/devtools/browser/5f1a2b78-16ee-4df0-848e-5f5acd0722b8
+1675899131726	geckodriver	INFO	Listening on 127.0.0.1:63631
+1675899134774	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "636 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofile2QpgY4"
+*** You are running in headless mode.
+1675899135054	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675899135059	Marionette	INFO	Listening on port 63641
+Read port: 63641
+WebDriver BiDi listening on ws://127.0.0.1:63632
+1675899135164	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofile2QpgY4\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63632/devtools/browser/b1759740-9712-41c4-9e09-d1b4a62d7f5e
+1675899343747	geckodriver	INFO	Listening on 127.0.0.1:63842
+1675899346818	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "638 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileOb30Uw"
+*** You are running in headless mode.
+1675899347070	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675899347074	Marionette	INFO	Listening on port 63852
+WebDriver BiDi listening on ws://127.0.0.1:63843
+Read port: 63852
+1675899347322	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileOb30Uw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63843/devtools/browser/963139c9-f7a8-406f-a694-76d263a11484
+1675899630502	geckodriver	INFO	Listening on 127.0.0.1:64162
+1675899633563	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "641 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofile556AP5"
+*** You are running in headless mode.
+1675899633840	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675899633844	Marionette	INFO	Listening on port 64172
+Read port: 64172
+WebDriver BiDi listening on ws://127.0.0.1:64163
+1675899633944	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofile556AP5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64163/devtools/browser/1497f4f3-0366-4e01-baf6-074dcd101986
