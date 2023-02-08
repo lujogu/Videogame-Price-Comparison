@@ -21,10 +21,4 @@ select = Select(driver.find_element(By.XPATH, "//select[@name='day']"))
 #wait.1.secong.in.case.of.transitions
 time.sleep(1)
 
-pagesource = driver.page_source
-soup = BeautifulSoup(pagesource)
-
-#you.can.now.enjoy.soup
-print(soup.prettify())
-
 driver.quit()

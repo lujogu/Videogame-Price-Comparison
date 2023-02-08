@@ -10,8 +10,10 @@ Read port: 63455
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileSO6Y8K\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:63443/devtools/browser/5f1a2b78-16ee-4df0-848e-5f5acd0722b8
-1675899131726	geckodriver	INFO	Listening on 127.0.0.1:63631
-1675899134774	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "636 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofile2QpgY4"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+NFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "636 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofile2QpgY4"
 *** You are running in headless mode.
 1675899135054	Marionette	INFO	Marionette enabled
 Dynamically enable window occlusion 0
@@ -34,8 +36,10 @@ Read port: 63852
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileOb30Uw\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:63843/devtools/browser/963139c9-f7a8-406f-a694-76d263a11484
-1675899630502	geckodriver	INFO	Listening on 127.0.0.1:64162
-1675899633563	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "641 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofile556AP5"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+NFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "641 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofile556AP5"
 *** You are running in headless mode.
 1675899633840	Marionette	INFO	Marionette enabled
 Dynamically enable window occlusion 0
@@ -46,3 +50,18 @@ WebDriver BiDi listening on ws://127.0.0.1:64163
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofile556AP5\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:64163/devtools/browser/1497f4f3-0366-4e01-baf6-074dcd101986
+Exiting due to channel error.
+Exiting due to channel error.
+1675900170494	geckodriver	INFO	Listening on 127.0.0.1:50852
+1675900173544	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "508 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileFnBYbX"
+*** You are running in headless mode.
+1675900173782	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675900173786	Marionette	INFO	Listening on port 50862
+WebDriver BiDi listening on ws://127.0.0.1:50853
+Read port: 50862
+1675900174028	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileFnBYbX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50853/devtools/browser/f60576f8-53ef-4ca0-ab3f-4b858c7bd308
+Exiting due to channel error.
