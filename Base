@@ -10,15 +10,17 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import Select
 
 options = Options()
+options.binary_location(R"C:\Program Files\Mozilla Firefox\firefox.exe")
 options.add_argument("--headless")
 driver = webdriver.Firefox(options=options)
 
 url = 'https://www.fanatical.com/en/game/elden-ring'
 driver.get(url)
 
+time.sleep(1)
+
 select = Select(driver.find_element(By.XPATH, "//select[@name='day']"))
 
-#wait.1.secong.in.case.of.transitions
 time.sleep(1)
 
 driver.quit()
