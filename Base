@@ -1,4 +1,3 @@
-import time
 import requests
 from bs4 import BeautifulSoup
 import selenium
@@ -8,19 +7,23 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 
 options = Options()
-options.binary_location(R"C:\Program Files\Mozilla Firefox\firefox.exe")
+options.binary_location = R"C:\Program Files\Mozilla Firefox\firefox.exe"
 options.add_argument("--headless")
 driver = webdriver.Firefox(options=options)
 
 url = 'https://www.fanatical.com/en/game/elden-ring'
 driver.get(url)
 
-time.sleep(1)
-
-select = Select(driver.find_element(By.XPATH, "//select[@name='day']"))
-
-time.sleep(1)
+delay = 3 # seconds
+try:
+    myElem = WebDriverWait(driver, delay).until(EC.presence_of_element_located((By.XPATH, "//select[@name='day']")))
+    select = Select(myElem)
+    print("Everything worked!")
+except TimeoutException:
+    print("Loading took too much time!")
 
 driver.quit()
