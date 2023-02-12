@@ -20,9 +20,12 @@ url = 'https://www.fanatical.com/en/game/elden-ring'
 driver.get(url)
 
 try:
-    selectDay = Select(WebDriverWait(driver, 3).until(EC.presence_of_element_located((By.XPATH, "//select[@name='day']")))).select_by_visible_text("1")
-    selectMonth = Select(driver.find_element(By.XPATH, "//select[@name='month']")).select_by_visible_text("01")
-    selectYear = Select(driver.find_element(By.XPATH, "//select[@name='year']")).select_by_visible_text("2001")
+    Select(WebDriverWait(driver, 3).until(EC.presence_of_element_located((By.XPATH, "//select[@name='day']")))).select_by_visible_text("1")
+    Select(driver.find_element(By.XPATH, "//select[@name='month']")).select_by_visible_text("01")
+    Select(driver.find_element(By.XPATH, "//select[@name='year']")).select_by_visible_text("2001")
+    driver.find_element(By.CSS_SELECTOR, ".accept-cookies-btn").click()
+    submission = driver.find_element(By.CSS_SELECTOR, "button.btn-block:nth-child(3)").click()
+    driver.execute_script("arguments[0].click();", submission)
     
 except TimeoutException:
     print("Element Loading Error!")
