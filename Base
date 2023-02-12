@@ -11,19 +11,20 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
 options = Options()
+#options.add_argument("--headless")
 options.binary_location = R"C:\Program Files\Mozilla Firefox\firefox.exe"
-options.add_argument("--headless")
+
 driver = webdriver.Firefox(options=options)
 
 url = 'https://www.fanatical.com/en/game/elden-ring'
 driver.get(url)
 
-delay = 3 # seconds
 try:
-    myElem = WebDriverWait(driver, delay).until(EC.presence_of_element_located((By.XPATH, "//select[@name='day']")))
-    select = Select(myElem)
-    print("Everything worked!")
+    selectDay = Select(WebDriverWait(driver, 3).until(EC.presence_of_element_located((By.XPATH, "//select[@name='day']")))).select_by_visible_text("1")
+    selectMonth = Select(driver.find_element(By.XPATH, "//select[@name='month']")).select_by_visible_text("01")
+    selectYear = Select(driver.find_element(By.XPATH, "//select[@name='year']")).select_by_visible_text("2001")
+    
 except TimeoutException:
-    print("Loading took too much time!")
+    print("Element Loading Error!")
 
-driver.quit()
+#driver.quit()
