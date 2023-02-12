@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
 options = Options()
-#options.add_argument("--headless")
+options.add_argument("--headless")
 options.binary_location = R"C:\Program Files\Mozilla Firefox\firefox.exe"
 
 driver = webdriver.Firefox(options=options)
@@ -20,14 +20,15 @@ url = 'https://www.fanatical.com/en/game/elden-ring'
 driver.get(url)
 
 try:
-    Select(WebDriverWait(driver, 3).until(EC.presence_of_element_located((By.XPATH, "//select[@name='day']")))).select_by_visible_text("1")
+    WebDriverWait(driver, 3).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".accept-cookies-btn"))).click()
+    Select(driver.find_element(By.XPATH, "//select[@name='day']")).select_by_visible_text("1")
     Select(driver.find_element(By.XPATH, "//select[@name='month']")).select_by_visible_text("01")
     Select(driver.find_element(By.XPATH, "//select[@name='year']")).select_by_visible_text("2001")
-    driver.find_element(By.CSS_SELECTOR, ".accept-cookies-btn").click()
-    submission = driver.find_element(By.CSS_SELECTOR, "button.btn-block:nth-child(3)").click()
+    submission = driver.find_element(By.CSS_SELECTOR, "button.btn-block:nth-child(3)")
     driver.execute_script("arguments[0].click();", submission)
+    print(driver.find_element(By.CSS_SELECTOR, "span.active > strong:nth-child(1) > span:nth-child(1)").get_attribute("innerHTML"))
     
 except TimeoutException:
-    print("Element Loading Error!")
+    print("Website took too long to load!")
 
-#driver.quit()
+driver.quit()
