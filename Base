@@ -10,8 +10,6 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
-list_of_urls = ['https://www.fanatical.com/en/game/elden-ring','https://gg.deals/game/elden-ring/']
-
 class PriceBrowser:
     def __init__(self):
         options = Options()
@@ -36,9 +34,22 @@ class PriceBrowser:
         except TimeoutException:
             print("Website took too long to load!")
 
+    def gg_deals(self, game):
+        url = 'https://gg.deals/game/' + game
+        driver = self.driver
+        driver.get(url)
+
+        try:
+            WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.CSS_SELECTOR, '#game-header-current-prices > div:nth-child(1) > div:nth-child(1) > a:nth-child(2) > span:nth-child(1) > span:nth-child(1)')))
+            print(driver.find_element(By.CSS_SELECTOR, '#game-header-current-prices > div:nth-child(1) > div:nth-child(1) > a:nth-child(2) > span:nth-child(1) > span:nth-child(1)').get_attribute('innerHTML'))
+            
+        except TimeoutException:
+            print("Website took too long to load!")
+
     def quit(self):
         self.driver.quit()
 
 test = PriceBrowser()
 test.firefox_adult("elden-ring")
+test.gg_deals("elden-ring")
 test.quit()
