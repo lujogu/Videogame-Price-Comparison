@@ -10,25 +10,35 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
-options = Options()
-options.add_argument("--headless")
-options.binary_location = R"C:\Program Files\Mozilla Firefox\firefox.exe"
+list_of_urls = ['https://www.fanatical.com/en/game/elden-ring','https://gg.deals/game/elden-ring/','https://www.g2a.com/best-deals/elden-ring','https://www.cdkeysforgames.com/games/steam-games/elden-ring/','https://www.cdkeys.com/pc/elden-ring-pc-steam','https://www.humblebundle.com/store/elden-ring']
 
-driver = webdriver.Firefox(options=options)
-
-url = 'https://www.fanatical.com/en/game/elden-ring'
-driver.get(url)
-
-try:
-    WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".accept-cookies-btn"))).click()
-    Select(driver.find_element(By.XPATH, "//select[@name='day']")).select_by_visible_text("1")
-    Select(driver.find_element(By.XPATH, "//select[@name='month']")).select_by_visible_text("01")
-    Select(driver.find_element(By.XPATH, "//select[@name='year']")).select_by_visible_text("2001")
-    submission = driver.find_element(By.CSS_SELECTOR, "button.btn-block:nth-child(3)")
-    driver.execute_script("arguments[0].click();", submission)
-    print(driver.find_element(By.CSS_SELECTOR, "span.active > strong:nth-child(1) > span:nth-child(1)").get_attribute("innerHTML"))
+class PriceBrowser:
+    def __init__(self):
+        options = Options()
+        options.add_argument("--headless")
+        options.binary_location = R"C:\Program Files\Mozilla Firefox\firefox.exe"   
+        self.driver = webdriver.Firefox(options=options)
     
-except TimeoutException:
-    print("Website took too long to load!")
+    def firefox_adult(self, game):
+        url = 'https://www.fanatical.com/en/game/' + game
+        driver = self.driver
+        driver.get(url)
 
-driver.quit()
+        try:
+            WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".accept-cookies-btn"))).click()
+            Select(driver.find_element(By.XPATH, "//select[@name='day']")).select_by_visible_text("1")
+            Select(driver.find_element(By.XPATH, "//select[@name='month']")).select_by_visible_text("01")
+            Select(driver.find_element(By.XPATH, "//select[@name='year']")).select_by_visible_text("2001")
+            submission = driver.find_element(By.CSS_SELECTOR, "button.btn-block:nth-child(3)")
+            driver.execute_script("arguments[0].click();", submission)
+            print(driver.find_element(By.CSS_SELECTOR, "span.active > strong:nth-child(1) > span:nth-child(1)").get_attribute("innerHTML"))
+            
+        except TimeoutException:
+            print("Website took too long to load!")
+
+    def quit(self):
+        self.driver.quit()
+
+test = PriceBrowser()
+test.firefox_adult("elden-ring")
+test.quit()
