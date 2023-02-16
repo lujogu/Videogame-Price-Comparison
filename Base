@@ -10,7 +10,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
-list_of_urls = ['https://www.fanatical.com/en/game/elden-ring','https://gg.deals/game/elden-ring/','https://www.g2a.com/best-deals/elden-ring','https://www.cdkeysforgames.com/games/steam-games/elden-ring/','https://www.cdkeys.com/pc/elden-ring-pc-steam','https://www.humblebundle.com/store/elden-ring']
+list_of_urls = ['https://www.fanatical.com/en/game/elden-ring','https://gg.deals/game/elden-ring/']
 
 class PriceBrowser:
     def __init__(self):
@@ -19,7 +19,7 @@ class PriceBrowser:
         options.binary_location = R"C:\Program Files\Mozilla Firefox\firefox.exe"   
         self.driver = webdriver.Firefox(options=options)
     
-    def firefox_adult(self, game):
+    def firefox_adult(self, game): #COULD DO FIREFOX PARENT WITH AGE PARAM
         url = 'https://www.fanatical.com/en/game/' + game
         driver = self.driver
         driver.get(url)
