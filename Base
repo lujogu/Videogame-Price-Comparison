@@ -19,7 +19,7 @@ class PriceBrowser:
         self.driver = webdriver.Firefox(options=options)
 
     def firefox_adult(self, game): #COULD DO FIREFOX PARENT WITH AGE PARAM
-        url = 'https://www.fanatical.com/en/game/' + game
+        url = 'https://www.fanatical.com/en/game/' + self.neatify(game)
         driver = self.driver
         driver.get(url)
 
@@ -36,7 +36,7 @@ class PriceBrowser:
             print("Website took too long to load!")
 
     def gg_deals(self, game):
-        url = 'https://gg.deals/game/' + game
+        url = 'https://gg.deals/game/' + self.neatify(game)
         driver = self.driver
         driver.get(url)
 
