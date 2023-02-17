@@ -1,0 +1,12 @@
+import re
+#import words2num
+# input string
+string = "Train sim. World 3"
+
+no_punc_string = re.sub(r'[^\w\s]','', string.lower())
+new_str = re.sub(r'\s','-', no_punc_string)
+ 
+# remove white spaces
+no_wspace_string = new_str.strip()
+#final_string = words2num.w2n(no_wspace_string) think about how to implement words to num
+print(no_wspace_string)
