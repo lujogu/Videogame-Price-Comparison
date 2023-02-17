@@ -17,7 +17,7 @@ class PriceBrowser:
         options.add_argument("--headless")
         options.binary_location = R"C:\Program Files\Mozilla Firefox\firefox.exe"   
         self.driver = webdriver.Firefox(options=options)
-    
+
     def firefox_adult(self, game): #COULD DO FIREFOX PARENT WITH AGE PARAM
         url = 'https://www.fanatical.com/en/game/' + game
         driver = self.driver
