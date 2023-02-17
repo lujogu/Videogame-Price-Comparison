@@ -817,3 +817,148 @@ DevTools listening on ws://127.0.0.1:59069/devtools/browser/ca75a51e-16ef-4ff6-a
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.fanatical.com."
 1676649452695	Marionette	INFO	Stopped listening on port 59079
 Dynamically enable window occlusion 1
+1676653576922	geckodriver	INFO	Listening on 127.0.0.1:57382
+1676653579974	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "573 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileUHjVtF"
+*** You are running in headless mode.
+1676653580214	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1676653580218	Marionette	INFO	Listening on port 57392
+WebDriver BiDi listening on ws://127.0.0.1:57383
+Read port: 57392
+1676653580458	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileUHjVtF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57383/devtools/browser/414ba4ea-e7bf-4c9c-9c62-c4ed682cbc33
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.fanatical.com."
+1676653584373	Marionette	INFO	Stopped listening on port 57392
+Dynamically enable window occlusion 1
+JavaScript error: resource://services-settings/RemoteSettingsWorker.jsm, line 145: Error: Shutdown, aborting read-only worker requests.
+1676653622224	geckodriver	INFO	Listening on 127.0.0.1:57503
+1676653625264	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "575 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileDXUVwU"
+*** You are running in headless mode.
+1676653625538	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1676653625541	Marionette	INFO	Listening on port 57513
+WebDriver BiDi listening on ws://127.0.0.1:57504
+Read port: 57513
+1676653625650	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileDXUVwU\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57504/devtools/browser/ccd04f92-cfa8-4f8e-92ad-d4153cc3595f
+1676653628823	Marionette	INFO	Stopped listening on port 57513
+Dynamically enable window occlusion 1
+JavaScript error: resource://services-settings/Utils.jsm, line 230: TypeError: NetworkError: Network request failed
+1676653636392	geckodriver	INFO	Listening on 127.0.0.1:57584
+1676653639460	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "575 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileVhbxyq"
+*** You are running in headless mode.
+1676653639696	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1676653639700	Marionette	INFO	Listening on port 57594
+WebDriver BiDi listening on ws://127.0.0.1:57585
+Read port: 57594
+1676653639932	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileVhbxyq\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57585/devtools/browser/6acb0344-adc0-42c3-b46f-7b895e1a338c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.fanatical.com."
+1676653643592	Marionette	INFO	Stopped listening on port 57594
+Dynamically enable window occlusion 1
+JavaScript error: resource://services-settings/Utils.jsm, line 230: TypeError: NetworkError: Network request failed
+1676653684488	geckodriver	INFO	Listening on 127.0.0.1:57698
+1676653687541	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "576 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofile7azmxb"
+*** You are running in headless mode.
+1676653687781	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1676653687784	Marionette	INFO	Listening on port 57708
+WebDriver BiDi listening on ws://127.0.0.1:57699
+Read port: 57708
+1676653688033	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofile7azmxb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57699/devtools/browser/1d2ad198-cd10-4869-9ec5-88c7eef77dfe
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.fanatical.com."
+1676653691882	Marionette	INFO	Stopped listening on port 57708
+Dynamically enable window occlusion 1
+JavaScript error: resource://services-settings/Utils.jsm, line 230: TypeError: NetworkError: Network request failed
+1676654738790	geckodriver	INFO	Listening on 127.0.0.1:58004
+1676654741802	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "580 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofilezlUDBz"
+*** You are running in headless mode.
+1676654742044	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1676654742048	Marionette	INFO	Listening on port 58014
+WebDriver BiDi listening on ws://127.0.0.1:58005
+Read port: 58014
+1676654742281	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofilezlUDBz\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58005/devtools/browser/4ce07096-68ae-4fe9-b101-1bfbe47b86da
+1676654764162	geckodriver	INFO	Listening on 127.0.0.1:58118
+1676654767206	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "581 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofilexrObAH"
+*** You are running in headless mode.
+1676654767436	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1676654767439	Marionette	INFO	Listening on port 58130
+WebDriver BiDi listening on ws://127.0.0.1:58119
+Read port: 58130
+1676654767689	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofilexrObAH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58119/devtools/browser/217ddd1e-b367-4b91-a3f5-8dc33cc3706c
+1676654939211	geckodriver	INFO	Listening on 127.0.0.1:58268
+1676654942231	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "582 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofile50CIyQ"
+*** You are running in headless mode.
+1676654942468	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1676654942471	Marionette	INFO	Listening on port 58278
+WebDriver BiDi listening on ws://127.0.0.1:58269
+Read port: 58278
+1676654942685	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofile50CIyQ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58269/devtools/browser/5d8328d3-c45c-43c5-8782-92db98afc9c6
+1676654945457	Marionette	INFO	Stopped listening on port 58278
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=13fa1bbda00"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=13fa1155400"
+JavaScript error: resource://services-settings/Utils.jsm, line 230: TypeError: NetworkError: Network request failed
+1676655012231	geckodriver	INFO	Listening on 127.0.0.1:58356
+1676655015249	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "583 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileJLwhiU"
+*** You are running in headless mode.
+1676655015514	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1676655015519	Marionette	INFO	Listening on port 58366
+WebDriver BiDi listening on ws://127.0.0.1:58357
+Read port: 58366
+1676655015753	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileJLwhiU\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58357/devtools/browser/583accf7-0472-4ca7-842a-70a23efcb3c9
+1676655021401	Marionette	INFO	Stopped listening on port 58366
+Dynamically enable window occlusion 1
+1676655335669	geckodriver	INFO	Listening on 127.0.0.1:58575
+1676655338689	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "585 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileUm58Tm"
+*** You are running in headless mode.
+1676655338923	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1676655338926	Marionette	INFO	Listening on port 58587
+WebDriver BiDi listening on ws://127.0.0.1:58576
+Read port: 58587
+1676655339138	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofileUm58Tm\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58576/devtools/browser/a0666ffd-4b20-4f29-8d8d-907f59cd9156
+1676655358330	geckodriver	INFO	Listening on 127.0.0.1:58655
+1676655361372	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "586 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofilevJLhc5"
+*** You are running in headless mode.
+1676655361608	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1676655361611	Marionette	INFO	Listening on port 58667
+WebDriver BiDi listening on ws://127.0.0.1:58656
+Read port: 58667
+1676655361868	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LUCASG~1\\AppData\\Local\\Temp\\rust_mozprofilevJLhc5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58656/devtools/browser/f7954cf7-4f57-4348-85e9-a0de0097936c
+1676655366266	Marionette	INFO	Stopped listening on port 58667
+Dynamically enable window occlusion 1
+JavaScript error: resource://services-settings/Utils.jsm, line 230: TypeError: NetworkError: Network request failed

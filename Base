@@ -18,22 +18,25 @@ class PriceBrowser:
         options.binary_location = R"C:\Program Files\Mozilla Firefox\firefox.exe"   
         self.driver = webdriver.Firefox(options=options)
 
-    def firefox_adult(self, game): #COULD DO FIREFOX PARENT WITH AGE PARAM
+    def fanatical_adult(self, game): #COULD DO FIREFOX PARENT WITH AGE PARAM
         url = 'https://www.fanatical.com/en/game/' + self.neatify(game)
         driver = self.driver
         driver.get(url)
 
         try:
             WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".accept-cookies-btn"))).click()
+        except TimeoutException:
+            print("Website took too long to load!")
+
+        try:
             Select(driver.find_element(By.XPATH, "//select[@name='day']")).select_by_visible_text("1")
             Select(driver.find_element(By.XPATH, "//select[@name='month']")).select_by_visible_text("01")
             Select(driver.find_element(By.XPATH, "//select[@name='year']")).select_by_visible_text("2001")
             submission = driver.find_element(By.CSS_SELECTOR, "button.btn-block:nth-child(3)")
             driver.execute_script("arguments[0].click();", submission)
             print(driver.find_element(By.CSS_SELECTOR, "span.active > strong:nth-child(1) > span:nth-child(1)").get_attribute("innerHTML"))
-            
-        except TimeoutException:
-            print("Website took too long to load!")
+        except selenium.common.exceptions.NoSuchElementException:
+            print("URL does not exist!")
 
     def gg_deals(self, game):
         url = 'https://gg.deals/game/' + self.neatify(game)
@@ -41,11 +44,16 @@ class PriceBrowser:
         driver.get(url)
 
         try:
-            WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.CSS_SELECTOR, '#game-header-current-prices > div:nth-child(1) > div:nth-child(1) > a:nth-child(2) > span:nth-child(1) > span:nth-child(1)')))
-            print(driver.find_element(By.CSS_SELECTOR, '#game-header-current-prices > div:nth-child(1) > div:nth-child(1) > a:nth-child(2) > span:nth-child(1) > span:nth-child(1)').get_attribute('innerHTML'))
-            
+            WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.XPATH, '//*[@id="page"]')))
         except TimeoutException:
             print("Website took too long to load!")
+
+        try:
+            print(driver.find_element(By.CSS_SELECTOR, '#game-header-current-prices > div:nth-child(1) > div:nth-child(1) > a:nth-child(2) > span:nth-child(1) > span:nth-child(1)').get_attribute('innerHTML'))
+        except selenium.common.exceptions.NoSuchElementException:
+            print("URL does not exist!")
+
+             
 
     def neatify(self, word):
         no_punc_string = re.sub(r'[^\w\s]','', word.lower())
@@ -57,5 +65,5 @@ class PriceBrowser:
         self.driver.quit()
 
 test = PriceBrowser()
-test.firefox_adult(test.neatify("for honor"))
+test.gg_deals("skiddidybop")
 test.quit()
