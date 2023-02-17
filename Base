@@ -1,3 +1,4 @@
+import re
 import requests
 from bs4 import BeautifulSoup
 import selenium
@@ -46,10 +47,15 @@ class PriceBrowser:
         except TimeoutException:
             print("Website took too long to load!")
 
+    def neatify(self, word):
+        no_punc_string = re.sub(r'[^\w\s]','', word.lower())
+        dashed_string = re.sub(r'\s','-', no_punc_string)
+        no_wspace_string = dashed_string.strip()
+        return no_wspace_string
+
     def quit(self):
         self.driver.quit()
 
 test = PriceBrowser()
-test.firefox_adult("elden-ring")
-test.gg_deals("elden-ring")
+test.firefox_adult(test.neatify("for honor"))
 test.quit()
