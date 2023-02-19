@@ -53,8 +53,6 @@ class PriceBrowser:
         except selenium.common.exceptions.NoSuchElementException:
             print("URL does not exist!")
 
-             
-
     def neatify(self, word):
         no_punc_string = re.sub(r'[^\w\s]','', word.lower())
         dashed_string = re.sub(r'\s','-', no_punc_string)
@@ -65,5 +63,5 @@ class PriceBrowser:
         self.driver.quit()
 
 test = PriceBrowser()
-test.gg_deals("skiddidybop")
-test.quit()
+test.gg_deals("elden ring")
+test.quit() 
