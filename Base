@@ -22,6 +22,7 @@ class PriceBrowser:
         url = 'https://www.fanatical.com/en/game/' + self.neatify(game)
         driver = self.driver
         driver.get(url)
+        tempgame = Game()
 
         try:
             WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".accept-cookies-btn"))).click()
@@ -34,7 +35,10 @@ class PriceBrowser:
             Select(driver.find_element(By.XPATH, "//select[@name='year']")).select_by_visible_text("2001")
             submission = driver.find_element(By.CSS_SELECTOR, "button.btn-block:nth-child(3)")
             driver.execute_script("arguments[0].click();", submission)
-            print(driver.find_element(By.CSS_SELECTOR, "span.active > strong:nth-child(1) > span:nth-child(1)").get_attribute("innerHTML"))
+            tempgame.SetPrice(driver.find_element(By.CSS_SELECTOR, "span.active > strong:nth-child(1) > span:nth-child(1)").get_attribute("innerHTML"))
+            tempgame.SetTitle(driver.find_element(By.CSS_SELECTOR, ".product-name").get_attribute("innerHTML"))
+            return tempgame
+
         except selenium.common.exceptions.NoSuchElementException:
             print("URL does not exist!")
 
@@ -62,6 +66,29 @@ class PriceBrowser:
     def quit(self):
         self.driver.quit()
 
+class Game:
+    def __init__(self):
+        self.title = 'default_title'
+        self.price = 0
+        self.developer = 'default_developer'
+    
+    def GetTitle(self):
+        return self.title
+    def SetTitle(self, newTitle):
+        self.title = newTitle #include error handling
+
+    def GetPrice(self):
+        return self.price
+    def SetPrice(self, newPrice):
+        self.price = newPrice #include error handling
+    
+    def GetDeveloper(self):
+        return self.developer
+    def SetDevelper(self, newDeveloper):
+        self.developer = newDeveloper #include error handling
+
 test = PriceBrowser()
-test.gg_deals("elden ring")
+testgame = test.fanatical_adult("Elden ring...")
+print(testgame.GetTitle())
+print(testgame.GetPrice())
 test.quit() 
