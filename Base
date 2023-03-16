@@ -42,6 +42,24 @@ class PriceBrowser:
         except selenium.common.exceptions.NoSuchElementException:
             print("URL does not exist!")
 
+    def is_there_any_deal(self, game): #COULD DO FIREFOX PARENT WITH AGE PARAM
+        url = 'https://isthereanydeal.com/game/' + (self.neatify(game)).replace('-','') + '/info/'
+        driver = self.driver
+        driver.get(url)
+        tempgame = Game()
+
+        try:
+            table = driver.find_element(By.CSS_SELECTOR, ".t-st3")
+            rows = table.find_elements_by_xpath('.//tr')
+
+            for row in rows:
+                cells = row.find_elements_by_xpath('.//td')
+                for cell in cells:
+                    print(cell.text.strip())
+            return 0
+        except selenium.common.exceptions.NoSuchElementException:
+            print("URL does not exist!")
+
     def gg_deals(self, game):
         url = 'https://gg.deals/game/' + self.neatify(game)
         driver = self.driver
@@ -87,8 +105,8 @@ class Game:
     def SetDevelper(self, newDeveloper):
         self.developer = newDeveloper #include error handling
 
+
+
 test = PriceBrowser()
-testgame = test.fanatical_adult("Elden ring...")
-print(testgame.GetTitle())
-print(testgame.GetPrice())
+testgame = test.is_there_any_deal("Elden ring...")
 test.quit() 
